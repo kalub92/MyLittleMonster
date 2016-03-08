@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15C47a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +16,48 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="studioLogo" translatesAutoresizingMaskIntoConstraints="NO" id="0F0-X1-MKF">
+                                <rect key="frame" x="177" y="200" width="247" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="210" id="U5O-F2-iOZ"/>
+                                    <constraint firstAttribute="height" constant="210" id="VBC-we-Uqr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="247" id="Z8c-6u-gqv"/>
+                                    <constraint firstAttribute="width" constant="247" id="aGS-ji-i4F"/>
+                                    <constraint firstAttribute="height" constant="397" id="hT6-Dd-NKR"/>
+                                    <constraint firstAttribute="width" constant="455" id="raD-T2-dLX"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="U5O-F2-iOZ"/>
+                                        <exclude reference="Z8c-6u-gqv"/>
+                                        <exclude reference="hT6-Dd-NKR"/>
+                                        <exclude reference="raD-T2-dLX"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0F0-X1-MKF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="6fk-bu-CFf"/>
+                            <constraint firstItem="0F0-X1-MKF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Vlu-bU-G2B"/>
+                            <constraint firstItem="0F0-X1-MKF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hZd-rO-knV"/>
+                            <constraint firstItem="0F0-X1-MKF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="j4f-IE-xDg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6fk-bu-CFf"/>
+                                <exclude reference="Vlu-bU-G2B"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="-51" y="471"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="studioLogo" width="1024" height="1024"/>
+    </resources>
 </document>
